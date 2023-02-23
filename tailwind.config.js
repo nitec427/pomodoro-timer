@@ -8,6 +8,9 @@ module.exports = {
         "primary-light": "#c76156",
         "button-light-red": "#c66a6a",
       },
+      fontFamily: {
+        sans: ['"PT Sans"', "sans-serif"],
+      },
       fontSize: {
         "2xs": "0.7rem",
         "3xs": "0.6rem",
