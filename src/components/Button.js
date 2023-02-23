@@ -4,7 +4,7 @@ import { AiOutlineBarChart, AiFillSetting } from "react-icons/ai";
 const Button = (props) => {
   const { icon, text } = props;
   return (
-    <button className="bg-button-light-red text-white w-20 h-6 rounded-sm flex justify-center items-center hover:text-gray-100 hover:brightness-105 mr-5">
+    <button className="bg-violet-500 text-white w-20 h-6 rounded-sm flex justify-center items-center hover:text-gray-100 hover:brightness-105 mr-5">
       <span className="text-2xl">
         {icon === "AiOutlineBarChart" ? (
           <AiOutlineBarChart size={12} className="mr-1" />

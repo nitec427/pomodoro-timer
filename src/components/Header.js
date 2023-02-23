@@ -5,9 +5,9 @@ import char1 from "../assets/char1.png";
 import char2 from "../assets/char2.png";
 const Header = (props) => {
   return (
-    <div className="h-12 grid grid-cols-2 border-b border-gray-800">
+    <div className="h-12 grid grid-cols-2 mb-10 border-b border-gray-800">
       {/* Logo */}
-      <div className="text-white border-b-2 border-white flex items-center">
+      <div className="text-white border-b-2 border-yellow-300 flex items-center">
         <span className="text-2xl">
           <AiFillCheckCircle size={24} className="mr-1 ml-10" />
         </span>
