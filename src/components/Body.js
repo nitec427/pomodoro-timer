@@ -7,8 +7,7 @@ const Button = (props) => {
       <div className="h-screen w-1/2 bg-violet-700 grid grid-rows-custom">
         <Header />
         <Card />
-        {/* Tasks Component */}
-        {/* <Tasks /> */}
+        <Tasks />
       </div>
     </div>
   );
