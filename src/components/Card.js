@@ -29,8 +29,10 @@ function Card() {
   const handlePomodoro = (new_time) => {
     setTime(new_time);
   };
-  const padClock = (time) => {
-    return time < 10 ? `0${time}` : time;
+  const padClock = (hour, minute) => {
+    return `${hour.toString().padStart(2, "0")}:${minute
+      .toString()
+      .padStart(2, "0")}`;
   };
   return (
     <div className="flex justify-center ">
@@ -46,9 +48,7 @@ function Card() {
           <div className="text-white text-8xl font-semibold">
             {time === 0
               ? "00:00"
-              : ` ${padClock(Math.floor(time / 60).toString())}:${time % 60}${
-                  time % 60 < 10 ? "0" : ""
-                }`}
+              : ` ${padClock(Math.floor(time / 60), time % 60)}`}
           </div>
         </div>
         {/* Pause and Next Button */}

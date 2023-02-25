@@ -5,7 +5,7 @@ const TimerButton = (props) => {
   const { handlePomodoro, text } = props;
   const times = {
     pomodoro: SECONDS_IN_MINUTE * 60,
-    shortbreak: SECONDS_IN_MINUTE * 5,
+    shortbreak: 63,
     longbreak: SECONDS_IN_MINUTE * 15,
   };
   const processText = (text) => {
